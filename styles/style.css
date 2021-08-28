@@ -1,0 +1,334 @@
+body 
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+    margin:auto;
+    background-color: #21252e;
+}
+
+header
+{
+    background-color:ivory;
+    color:black;
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;    
+    padding: 0.5em; 
+    position: fixed;  
+    top: 0px; 
+    left:0px; 
+    right:0;  
+}
+
+#search-container 
+{
+    background-color: lightgray;
+    padding: 0.25em;
+    border-radius: 50px;
+}
+
+
+#search-box 
+{
+    border: none;
+    outline: none;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 50px;
+}
+
+img 
+{
+    width: 100%; 
+}
+
+.logo-container img
+{
+    width:20px;
+    height: 20px;
+   
+}
+
+.logo-container
+{
+    display:flex;
+    justify-content:space-between; 
+    
+    
+}
+
+#user
+{
+    font-size:20px;
+    color:black;
+}
+
+main
+{
+    max-width: 800px;
+    margin: 4em auto;
+    padding: 0 0.5em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+    grid-row-gap: 0.5em;
+}
+
+#add-card-button
+{
+    background-color: ivory;
+    color: black;
+    border: 2px;
+    border-radius: 20%;
+    height: 30px;
+}
+
+#picPlusAddButton
+{
+    border:1px solid;
+    text-align: center;
+    border-color: ivory;
+    width:600px;
+
+}
+h4
+{
+    margin:0.6em 0;
+}
+.cards-container 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2em;
+    margin: 2em auto;
+    max-width: 600px;
+}
+
+.cards-container .card
+{
+    background-color: ivory;
+    border: 1px solid;
+}
+
+
+.user-pic
+{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding:0.5em;
+}
+
+.marks
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hashtags
+{
+    color:blue;
+}
+
+#pic-name
+{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    margin:0 0 2.1em;
+    color:ivory;
+}
+
+#name-in-pic-name
+{
+    padding:0.8em;
+}
+
+.pic-name-location
+{
+    display:grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+
+.comment
+{
+    background-color:lightgray;
+    margin:0.2em;
+    width: 570px;
+}
+
+#left > .follow-container 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 2em;
+    margin: 2em auto;
+    max-width: 600px;
+    border: darkgray;
+    border-style: groove;
+    padding: 2em 0.1em 0.1em 0.1em;
+    background-color: ivory;
+    border:1px solid;
+    border-color:black;
+}
+
+.follow-container .follow
+{
+padding: 0.3em;
+text-align: center;
+}
+
+#left .follow-container .follow
+{
+background-color: lightgray;
+border:1px solid;
+}
+
+.below-pic
+{
+    padding:0.5em;
+}
+
+#left .follow-button
+{
+  background-color:cornflowerblue;
+  border: 1px solid;
+  border-color:black;
+  border-radius: 3px;
+  width: 85px;
+  height: 30px;
+ 
+}
+
+#follow-text
+{
+    position:absolute;
+    color:black;
+    margin: 0.5em;
+}
+
+#follow-text-right
+{
+    position:absolute;
+    color:black;
+    margin: 2.4em 0 0 0.5em;
+}
+
+ .follow-container .delete-button
+ {
+    float: right;
+    margin: 5px 5px 0 0;
+    top: 0;
+    right: 0;
+  
+}
+
+
+#first-right img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding:0.5em;
+}
+
+
+#about-me >div
+{
+    padding:0.5em;    
+}
+
+#about-me
+{
+    background-color: ivory;
+    border: 1px solid; 
+}
+
+#right > .follow-container
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 0.5em;
+    margin: 2em auto;
+    max-width: 600px;
+    border: darkgray;
+    border-style: groove;
+    padding: 2em 0.1em 0.1em 0.1em;
+    width:240px;
+    background-color: ivory;
+}
+
+#right  .follow-button
+{
+    background-color: ivory;
+    border: ivory;  
+    width: 30px;
+    height: 10px;
+    color:blue;
+    margin:2em;
+}
+
+#right .follow
+{
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;    
+    padding: 0.5em; 
+}
+
+@media screen  and (max-width: 600px)
+ {
+    #right 
+    {
+        visibility:hidden;
+    }
+    #search-container 
+    {
+        visibility: hidden;
+    }
+    main
+    {
+        padding:0;
+        grid-template-columns: 1fr;
+    } 
+}
+
+/*Vezano za js*/
+.fa-heart 
+{
+    color: red;
+}
+
+.clickable-icon
+{
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.clickable-icon:hover 
+{
+    transform: scale(1.2);
+}
+
+.hidden 
+{
+    display: none;
+}
+
+.yellowBookmark
+{
+    color:yellow;
+}
+
+.yellowUser
+{
+    color:yellow;
+}
+
+.subButton
+{
+ display:none;
+}

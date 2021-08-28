@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta charset="utf-8">        
+        <title> Instagram </title>
+        <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="stylesheet" href="styles/font-awesome.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--template kartice-->
+        <template id="card-template">
+            <article class="card" >
+                <div class="pic-name-location">
+                    <div><img src="images/bird.jpg" class="user-pic" alt="picture"/></div> 
+                    <div class="name-location">
+                        <h4 class="user-name">lea98<br></h4>
+                        <span class="location"></span>
+                    </div>
+                </div>
+                <img class="main-pic" src="" alt="picture"/>
+                <div class="below-pic">
+                    <div class="marks">
+                        <div>
+                            <i class="fa fa-heart-o heart-icon clickable-icon"></i>
+                            <i class="fa fa-comment-o clickable-icon"></i> 
+                        </div>
+                        <div ><i class="fa fa-bookmark-o clickable-icon"></i></div> 
+                    </div>
+                    <div>Sviđa mi se:<span class="addLike"> 0</span></div>
+                    <div class="hashtags"></div>
+                    <div class="mess"></div>
+                    <hr>
+                    <span>Komentiraj:</span>
+                    <textarea class="comment" rows="2" cols="50" ></textarea>
+                    <button  class="subButton">Kom</button>
+                </div>
+            </article>
+        </template>
+     
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="picture"/>
+                <label>&nbsp; Instagram</label>
+            </div>
+           
+            <div id="search-container">
+                <i class="fa fa-search search-icon"></i>
+                <input id="search-box" type="text" placeholder="Traži"/>
+            </div>
+            
+            <div>
+                <i  id="headerHeart" class="fa fa-heart-o heart-icon clickable-icon"></i>
+                <i id="headerUser" class="fa fa-user clickable-icon"></i>
+            </div>
+        </header>
+         
+    
+    
+        <main>
+<!--LIJEVI STUPAC -->
+
+            <div id="left">
+            <div id="picPlusAddButton"><img src="images/bird.jpg" class="user-pic" alt="picture"/>   
+            <button id="add-card-button">Dodaj</button></div>
+<!--Prva lijeva kartica -->
+            <div class="cards-container">
+                <article class="card myCard">
+                    <div class="pic-name-location">
+                        <div><img src="images/bird.jpg" class="user-pic" alt="picture"/></div> 
+                        <div class="name-location">
+                            <h4 class="user-name">lea98<br></h4>
+                            <span class="location">Split</span>
+                        </div>
+                    </div>
+                    <img src="images/norway.jpg" alt="picture"/>
+                    <div class="below-pic">
+                        <div class="marks">
+                            <div>
+                                <i class="fa fa-heart-o heart-icon clickable-icon"></i>
+                                <i class="fa fa-comment-o clickable-icon"></i> 
+                            </div>
+                        <div ><i class="fa fa-bookmark-o clickable-icon"></i></div> 
+                        </div>
+                        <div >Sviđa mi se:<span class="addLike"> 0</span></div>
+                        <div class="hashtags"><span>#blabla</span><span>#sunce</span> </div>
+                        <div class="mess">josipa1: super</div>
+                        <hr>
+                        <span>Komentiraj:</span>
+                        <textarea class="comment" rows="2" cols="50" ></textarea>
+                        <button  class="subButton">Kom</button>
+                    </div>
+                </article>
+            </div>
+        
+    <!--Prijedlozi za follow -->
+  
+            <div id="follow-text">Prijedlozi za vas:</div>
+            <div class="follow-container">
+
+                <article class="follow fOne">
+                    <img src="images/slika4.jpg" class="user-pic" alt="picture"/>
+                    <i class="fa fa-times delete-button clickable-icon"></i>
+                    <h4>marija12</h4>
+                    <button class="follow-button clickable-icon">Follow</button>
+                </article>
+
+                <article  class="follow fTwo">
+                    <img src="images/slika5.jpg" class="user-pic" alt="picture"/>
+                    <i class="fa fa-times delete-button clickable-icon"></i>
+                    <h4>jurica4</h4>
+                    <button class="follow-button clickable-icon">Follow</button>
+                </article>
+
+                <article  class="follow fThree">
+                    <img src="images/slika3.jpg" class="user-pic" alt="picture"/>
+                    <i class="fa fa-times delete-button clickable-icon"></i>
+                    <h4>marko2</h4>
+                    <button class="follow-button clickable-icon">Follow</button>
+                </article>
+            </div>
+
+<!--Druga lijeva kartica -->
+            <div class="cards-container">
+                <article class="card elseCard">
+                    <div class="pic-name-location">
+                        <div><img src="images/slika2.jpg" class="user-pic" alt="picture"/></div>
+                        <div class="name-location">
+                            <h4 class="user-name">ana96<br></h4>
+                            <span class="location">Zagreb</span>
+                        </div>
+                     </div>
+                    <img src="images/slika6.jpg" alt="picture"/>
+                    <div class="below-pic">
+                        <div class="marks">
+                            <div>
+                                <i class="fa fa-heart-o heart-icon clickable-icon"></i>
+                                <i class="fa fa-comment-o clickable-icon"></i> 
+                            </div>
+                            <div><i class="fa fa-bookmark-o clickable-icon"></i></div> 
+                        </div>
+                        <div>Sviđa mi se:<span class="addLike"> 0</span></div>
+                        <div class="hashtags"><span>#more</span><span>#haha</span> </div>
+                        <div class="mess">hana91:nekikomentar</div>
+                        <hr>
+                        <span>Komentiraj:</span>
+                        <textarea class="comment" rows="2" cols="50" ></textarea>
+                        <button  class="subButton">Kom</button>
+        
+                    </div>
+                </article>
+            </div>
+
+<!--Treca lijeva kartica -->
+                <div class="cards-container">
+                    <article class="card elseCard">
+                        <div class="pic-name-location">
+                            <div><img src="images/slika3.jpg" class="user-pic" alt="picture"/></div>
+                            <div class="name-location">
+                                <h4 class="user-name">luka01<br></h4>
+                                <span class="location">Dubrovnik</span>
+                            </div>
+                        </div>
+                        <img src="images/slika7.jpg" alt="picture"/>
+                        <div class="below-pic">
+                            <div class="marks">
+                                <div>
+                                    <i class="fa fa-heart-o heart-icon clickable-icon"></i>
+                                    <i class="fa fa-comment-o clickable-icon"></i> 
+                                </div>
+                                <div ><i class="fa fa-bookmark-o clickable-icon"></i></div> 
+                            </div>
+                            <div >Sviđa mi se:<span class="addLike"> 0</span></div>
+                            <div class="hashtags"><span>#bozci</span><span>#snijeg</span> </div>
+                            <div class="mess">iva:super</div>
+                            <hr>
+                            <span>Komentiraj:</span>
+                            <textarea class="comment" rows="2" cols="50" ></textarea>
+                            <button  class="subButton">Kom</button>
+                        </div>
+                    </article>
+                </div>
+
+
+            </div> <!--kraj lefta -->
+
+<!--Desni stupac-->
+            <div id="right">
+
+                <div id="pic-name" >
+                    <div><img class="user-pic" src="images/bird.jpg" alt="picture"/></div>
+                    <div id="name-in-pic-name"><span id="current-user-name">lea98</span><span><br>Lea Bratic</span></div>
+                </div>
+
+                <div id="about-me">
+                    <div>O meni:</div>
+                    <div><i  class="fa fa-user"></i>&nbsp; :&nbsp;<span id="numOfFollowers">100</span> </div>
+                    <div><i class="fa fa-heart-o heart-icon"></i>&nbsp;:&nbsp; <span id="totalLikeNumber">0</span></div>
+                    <div ><i class="fa fa-bookmark-o"></i>&nbsp;:&nbsp;<span id="bookmarkNumber">0</span> </div>
+                </div>
+
+                <div id="follow-text-right">Mi predlažemo:</div>
+                    <div class="follow-container">
+                
+                        <article  class="follow fOne">
+                            <img src="images/slika4.jpg" class="user-pic" alt="picture"/>
+                            <h4>marija12</h4>
+                            <button class="follow-button clickable-icon">Follow</button>
+                        </article>
+
+                        <article  class="follow fTwo">
+                            <img src="images/slika5.jpg" class="user-pic" alt="picture"/>
+                            <h4>jurica4</h4>
+                            <button class="follow-button clickable-icon">Follow</button>
+                        </article>
+
+                        <article class="follow fThree">
+                            <img src="images/slika3.jpg" class="user-pic" alt="picture"/>
+                            <h4>marko2</h4>
+                                <button class="follow-button clickable-icon">Follow</button>
+                        </article>
+                    </div>
+
+                </div>
+        </main>
+
+    <script src="scripts/cards.js"></script>
+    </body>
+
+</html>
